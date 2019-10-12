@@ -58,3 +58,5 @@ We would like to thank the following open source projects:
 - **OpenStreetMap**: https://www.openstreetmap.org, https://download.geofabrik.de/asia/india.html (OpenStreetMap data for India) 
 - **Project-OSRM**: https://github.com/Project-OSRM/osrm-backend (Open Source Routing Machine)
 - **Leaflet Routing Machine**: https://github.com/perliedman/leaflet-routing-machine (Find the way from A to B on a Leaflet map)
+- **Twitter Bootstrap**: https://getbootstrap.com/docs/4.1/examples/album/ 
+- **Rotating Globe with CSS**: https://w3bits.com/labs/css-earth/
