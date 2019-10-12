@@ -32,7 +32,7 @@ The following example is for india map. Any map of your choice can be downloaded
 
 #### Exatracting data for a specific car type
 
-To extract the nodes required based on the restictions for the vehicle in .lua file. The extracted nodes will be stored in data folder. We have added 2 new profiles (auto.lua and truck.lua). 
+To extract the nodes required based on the restictions for the vehicle in .lua file. The extracted nodes will be stored in data folder. We have added 2 new profiles (auto.lua and truck.lua).
 
 `build/osrm-extract -p profiles/car.lua data/india-latest.osm.pbf` 
 `build/osrm-partition data/india-latest.osrm`
