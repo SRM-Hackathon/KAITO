@@ -110,118 +110,77 @@ background: radial-gradient(circle at 100px 100px, #fff, #000);
 .kaito-title {
 font-size: 210px;
 }
-
-.main {
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 75%;
-  width: 100%;
-bottom=0;
-  color: #eeeeee;
-  vertical-align:middle;
-
-  }
-
-  .one {
-  background-image: url("http://www.orangesmile.com/common/img_city_maps_560/bangalore-map-0.jpg");
-  }
-{
-box-sizing: border-box;
-}
-
-body {
-font-family: Arial;
-font-size: 17px;
-}
-
-.container {
-position: relative;
-max-width: 800px;
-margin: 0 auto;
-}
-
-.container img {vertical-align: middle;}
-
-.container .content {
-background: rgb(0, 0, 0); /* Fallback color */
-background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-color: #f1f1f1;
-width: 100%;
-padding: 20px;
-}
-
 </style>
 </head>
 
-<body>
-
-  <header>
-    <div class="navbar navbar-dark bg-dark shadow-sm">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center">
-          <h1 class="d-none d-md-block kaito-title">Kait</h1><span class="earth"></span>
-        </a>
-      </div>
-    </div>
-  </header>
-
-
-  <main role="main">
-    <div class="album py-5 bg-light">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <form action="auto.html">
-                <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/auto.jpg">
-                <div class="card-body">
-                  <p class="card-text">Auto</p>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <form action="car.html">
-              <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/sedan.jpg">
-              <div class="card-body">
-                <p class="card-text">Car</p>
-              </div>
-              </form>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <form action="truck.html">
-              <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/truck.jpg">
-              <div class="card-body">
-                <p class="card-text">Truck</p>
-              </div>
-              </form>
-            </div>
-          </div>
-
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <h1 class="d-none d-md-block kaito-title">Kait</h1><span class="earth"></span>
+          </a>
         </div>
       </div>
-    </div>
+    </header>
 
-  </main>
+    <main role="main">
+      <div class="album py-5 bg-light">
+        <div class="container">
 
-<footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
-    <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.1/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.1/getting-started/">getting started guide</a>.</p>
-  </div>
-</footer>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/auto.jpg">
+                <div class="card-body">
+                  <ul>
+                    <li>Width: 1.2m</li>
+                    <li>Height: 1.0m</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/sedan.jpg">
+                <div class="card-body">
+                  <ul>
+                    <li>Width: 1.9m</li>
+                    <li>Height: 1.5m</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/truck.jpg">
+                <div class="card-body">
+                  <ul>
+                    <li>Width: 4.5m</li>
+                    <li>Height: 3.5m</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="../thirdparty/bootstrap/bootstrap.js"></script>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+        <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.1/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.1/getting-started/">getting started guide</a>.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../thirdparty/bootstrap/bootstrap.js"></script>
 <svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
