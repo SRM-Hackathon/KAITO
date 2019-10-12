@@ -17,15 +17,12 @@ For mac:
 `brew install boost cmake libzip libstxxl libxml2 lua tbb ccache`
 
 The build directory will contain the executables of the multi-level Djkstras and contraction heirarchies of the osrm.
-
-`mkdir build`
-
-`cd build`
-
-`cmake ../ -DENABLE_MASON=0`
-
-`make`
-
+```
+mkdir build
+cd build
+cmake ../ -DENABLE_MASON=0
+make
+```
 #### Open street map data
 
 The following example is for india map. Any map of your choice can be downloaded from [geofabrik](https://download.geofabrik.de/index.html)
@@ -34,9 +31,11 @@ The following example is for india map. Any map of your choice can be downloaded
 
 To extract the nodes required based on the restictions for the vehicle in .lua file. The extracted nodes will be stored in data folder.
 
-`build/osrm-extract -p profiles/car.lua data/india-latest.osm.pbf` 
-`build/osrm-partition data/india-latest.osrm`
-`build/osrm-customize data/india-latest.osrm`
+```
+build/osrm-extract -p profiles/car.lua data/india-latest.osm.pbf
+build/osrm-partition data/india-latest.osrm
+build/osrm-customize data/india-latest.osrm
+```
 
 The above steps only while using mld algorithm
 
@@ -44,10 +43,10 @@ The above steps only while using mld algorithm
 
 `build/osrm-routed --algorithm mld data/india-latest.osrm`
 
-#### Running your Application
+#### Running the demo
 
 1. clone the project.
-2. Run the globe.html file
+2. open the src/final.html file
 
 ### Standing on the Shoulders of Giants
 
