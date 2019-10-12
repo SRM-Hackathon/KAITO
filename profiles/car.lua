@@ -335,7 +335,14 @@ function process_node(profile, node, result, relations)
          local maxheight = Measure.get_max_height(node:get_value_by_key("maxheight"), node)
          restricted_by_height = maxheight and maxheight < profile.vehicle_height
       end
-
+      
+      -- check width restriction barriers
+      local restricted_by_width = false
+      if barrier == 'width_restrictor' then
+	      local maxwidth = Measure.get_max_width(node:get_value_by_key("maxwidth"), node)
+	      restricted_by_width = maxwidth and maxwidth< profile.vehicle_width
+      end 
+      
       --  make an exception for rising bollard barriers
       local bollard = node:get_value_by_key("bollard")
       local rising_bollard = bollard and "rising" == bollard
