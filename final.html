@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Album example for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/album/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="../thirdparty/bootstrap/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../thirdparty/bootstrap/album.css" rel="stylesheet">
+<style>
+  .earth {
+position: relative;
+width: 200px;
+height: 200px;
+margin: 1em auto;
+background: #888 url("../images/earthmap.jpg") 0 0 repeat;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+background-size: 420px;
+animation: rotate 4s linear infinite;
+-webkit-animation: rotate 4s linear infinite;
+-moz-animation: rotate 4s linear infinite;
+-ms-animation: rotate 4s linear infinite;
+-o-animation: rotate 4s linear infinite;
+-webkit-transition: -webkit-transform 200ms linear;
+-webkit-transform-style: preserve-3d;
+-moz-transition: -moz-transform 200ms linear;
+-moz-transform-style: preserve-3d;
+transition: transform 200ms linear;
+transform-style: preserve-3d;
+box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+-moz-box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+-webkit-box-shadow: inset 20px 0 80px 6px rgba(0, 0, 0, 1);
+color: #000;
+}
+
+.earth:before {
+content: "";
+position: absolute;
+top: 0%;
+left: 0%;
+width: 100%;
+height: 100%;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+box-shadow: -30px 5px 20px 10px rgba(0,0,0,.6) inset;
+-moz-box-shadow: -30px 5px 20px 10px rgba(0,0,0,.6) inset;
+-webkit-box-shadow: -30px 5px 25px 10px rgba(0,0,0,.6) inset;
+z-index: 2;
+}
+
+.earth:after {
+content: "";
+position: absolute;
+border-radius: 50%;
+-moz-border-radius: 50%;
+-webkit-border-radius: 50%;
+-ms-border-radius: 50%;
+-o-border-radius: 50%;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+opacity: 0.1;
+background: radial-gradient(circle at 100px 100px, #fff, #000);
+}
+
+@keyframes rotate {
+0% {background-position: 0 0;}
+100% {background-position: 630px 0;}
+}
+
+@-moz-keyframes rotate {
+0% {background-position: 0 0;}
+100% {background-position: 630px 0;}
+}
+
+@-webkit-keyframes rotate {
+0% {background-position: 0 0;}
+100% {background-position: 630px 0;}
+}
+
+
+@-ms-keyframes rotate {
+0% {background-position: 0 0;}
+100% {background-position: 630px 0;}
+}
+
+@-o-keyframes rotate {
+0% {background-position: 0 0;}
+100% {background-position: 630px 0;}
+}
+
+.kaito-title {
+font-size: 210px;
+}
+
+.main {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 75%;
+  width: 100%;
+bottom=0;
+  color: #eeeeee;
+  vertical-align:middle;
+
+  }
+
+  .one {
+  background-image: url("http://www.orangesmile.com/common/img_city_maps_560/bangalore-map-0.jpg");
+  }
+{
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+font-size: 17px;
+}
+
+.container {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+background: rgb(0, 0, 0); /* Fallback color */
+background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+color: #f1f1f1;
+width: 100%;
+padding: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+  <header>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <h1 class="d-none d-md-block kaito-title">Kait</h1><span class="earth"></span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+
+  <main role="main">
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <form action="auto.html">
+                <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/auto.jpg">
+                <div class="card-body">
+                  <p class="card-text">Auto</p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <form action="car.html">
+              <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/sedan.jpg">
+              <div class="card-body">
+                <p class="card-text">Car</p>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <form action="truck.html">
+              <input type="image" class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="../images/truck.jpg">
+              <div class="card-body">
+                <p class="card-text">Truck</p>
+              </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right">
+      <a href="#">Back to top</a>
+    </p>
+    <p>Album example is © Bootstrap, but please download and customize it for yourself!</p>
+    <p>New to Bootstrap? <a href="https://getbootstrap.com/docs/4.1/">Visit the homepage</a> or read our <a href="https://getbootstrap.com/docs/4.1/getting-started/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="../thirdparty/bootstrap/bootstrap.js"></script>
+<svg xmlns="http://www.w3.org/2000/svg" width="348" height="225" viewBox="0 0 348 225" preserveAspectRatio="none" style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;"><defs><style type="text/css"></style></defs><text x="0" y="17" style="font-weight:bold;font-size:17pt;font-family:Arial, Helvetica, Open Sans, sans-serif">Thumbnail</text></svg></body></html>
