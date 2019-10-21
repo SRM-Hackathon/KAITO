@@ -43,6 +43,8 @@ The above steps only while using mld algorithm
 #### Running OSRM backend
 
 `build/osrm-routed --algorithm mld data/india-latest.osrm`
+
+ 
 #### Frontend
 Make sure to use the Control.Geocode.js from this project. Do not download from leaflet-routing-machine. Only use the dist directory mentioned in this project in thirdparty dir. 
 
@@ -50,6 +52,7 @@ Make sure to use the Control.Geocode.js from this project. Do not download from 
 
 1. clone the project.
 2. Run the globe.html file
+ 
 
 ###### Demo
 Click [here](https://drive.google.com/file/d/173zTp1LJPMRx9PHQjuo_jbztLY9rDWaT/view?usp=sharing) for demo
